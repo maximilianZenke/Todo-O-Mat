@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Todo-O-Mat/static/css/main.bd1e2987.css",
+    "main.js": "/Todo-O-Mat/static/js/main.425d4edf.js",
+    "index.html": "/Todo-O-Mat/index.html",
+    "main.bd1e2987.css.map": "/Todo-O-Mat/static/css/main.bd1e2987.css.map",
+    "main.425d4edf.js.map": "/Todo-O-Mat/static/js/main.425d4edf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd1e2987.css",
+    "static/js/main.425d4edf.js"
+  ]
+}
