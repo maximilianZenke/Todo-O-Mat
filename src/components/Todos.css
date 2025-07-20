@@ -1,0 +1,87 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .header h1 {
+    grid-column: 2;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .logout-button {
+    grid-column: 3;
+    justify-self: end;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    transition: all 0.2s ease;
+    width: auto;         
+    max-width: 120px;     
+    white-space: nowrap;  
+  }
+  
+  .logout-button:hover {
+    background-color: #007bff;
+    color: white;
+  }  
+  
+  .filter-buttons {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .filter-buttons .button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-buttons .button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .todo-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .todo-table th,
+  .todo-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .todo-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .todo-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .todo-table tr:hover {
+    background-color: #eef4ff;
+  }
+  
