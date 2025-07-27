@@ -148,7 +148,7 @@ function Todos({ user }) {
         <tbody>
           {filteredTodos.length === 0 ? (
             <tr>
-              <td colSpan="4" style={{ padding: 20, textAlign: 'center' }}>Keine Todos gefunden.</td>
+              <td colSpan="3" style={{ padding: 20, textAlign: 'center' }}>Keine Todos gefunden.</td>
             </tr>
           ) : (
             filteredTodos.map(todo => (
