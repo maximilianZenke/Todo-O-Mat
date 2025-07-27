@@ -34,7 +34,7 @@ function Todos({ user }) {
   const due = new Date(duedate)
   const diffDays = Math.floor((due.setHours(0,0,0,0) - today.setHours(0,0,0,0)) / (1000 * 60 * 60 * 24))
 
-  if (diffDays > 1) return 'due-green'
+  if (diffDays >= 1) return 'due-green'
   if (diffDays === 0) return 'due-yellow'
   if (diffDays < 0) return 'due-red'
   return ''
