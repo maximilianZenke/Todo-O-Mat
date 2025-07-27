@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Todo-O-Mat/static/css/main.b8344465.css",
-    "main.js": "/Todo-O-Mat/static/js/main.83f97991.js",
+    "main.js": "/Todo-O-Mat/static/js/main.4d5b965e.js",
     "index.html": "/Todo-O-Mat/index.html",
     "main.b8344465.css.map": "/Todo-O-Mat/static/css/main.b8344465.css.map",
-    "main.83f97991.js.map": "/Todo-O-Mat/static/js/main.83f97991.js.map"
+    "main.4d5b965e.js.map": "/Todo-O-Mat/static/js/main.4d5b965e.js.map"
   },
   "entrypoints": [
     "static/css/main.b8344465.css",
-    "static/js/main.83f97991.js"
+    "static/js/main.4d5b965e.js"
   ]
 }
