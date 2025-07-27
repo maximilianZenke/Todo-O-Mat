@@ -118,7 +118,7 @@ function Todos({ user }) {
   return (
     <div className="container">
       <div className="header">
-        <h1>Willkommen {username}</h1>
+        <h1>Hi {username}</h1>
         <button className="logout-button" onClick={handleLogout}>Logout</button>
       </div>
 
