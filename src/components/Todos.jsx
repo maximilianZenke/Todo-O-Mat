@@ -68,12 +68,10 @@ function Todos({ user }) {
 
   const handleCreate = async (todoData) => {
     try {
-      // Füge die author-ID hinzu
       const todoWithAuthor = {
         ...todoData,
         author: user.id
       }
-      
       await createTodo(todoWithAuthor)
       await loadTodos()
       setShowCreateModal(false)
@@ -83,7 +81,7 @@ function Todos({ user }) {
     }
   }
 
-  const handleEdit = async (updates) => {  // ✅ Erwartet nur die Änderungen
+  const handleEdit = async (updates) => {
     try {
       await updateTodo(selectedTodo.id, updates);
       await loadTodos()
@@ -145,7 +143,6 @@ function Todos({ user }) {
             <th onClick={() => setSelectedTodo(null)} style={{ cursor: 'pointer' }}>Name</th>
             <th onClick={() => filteredTodos.length && setSelectedTodo(filteredTodos[0])} style={{ cursor: 'pointer' }}>Fällig</th>
             <th onClick={() => filteredTodos.length && setSelectedTodo(filteredTodos[0])} style={{ cursor: 'pointer' }}>Kritisch?</th>
-            <th onClick={() => filteredTodos.length && setSelectedTodo(filteredTodos[0])} style={{ cursor: 'pointer' }}>Erledigt?</th>
           </tr>
         </thead>
         <tbody>
@@ -161,9 +158,6 @@ function Todos({ user }) {
                   {todo.duedate ? formatDueDate(todo.duedate) : '-'}
                 </td>
                 <td style={{ textAlign: 'center' }}>{todo.is_critical ? 'Ja' : 'Nein'}</td>
-                <td style={{ textAlign: 'center' }}>
-                  {todo.done ? '✅' : '❌'}
-              </td>
               </tr>
             ))
           )}
